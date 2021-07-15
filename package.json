@@ -1,0 +1,26 @@
+{
+  "name": "serverless-appsync-i18n",
+  "version": "1.0.0",
+  "description": "Basic example of AWS AppSync translation",
+  "main": "index.js",
+  "scripts": {
+    "deploy:uk": "LOCALE=uk serverless deploy --stage=dev",
+    "deploy:fr": "LOCALE=fr serverless deploy --stage=dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leegilmorecode/serverless-appsync-i18n.git"
+  },
+  "author": "Lee Gilmore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leegilmorecode/serverless-appsync-i18n/issues"
+  },
+  "homepage": "https://github.com/leegilmorecode/serverless-appsync-i18n#readme",
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "prettier": "^2.3.2",
+    "serverless": "^2.51.2",
+    "serverless-appsync-plugin": "^1.11.3"
+  }
+}

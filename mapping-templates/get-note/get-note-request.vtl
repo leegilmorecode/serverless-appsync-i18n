@@ -1,0 +1,12 @@
+#if($ctx.args.noteId == 0)
+    $utils.error($util.str.toReplace("${invalidValueErrorMessage}", "{0}", "$ctx.args.noteId"), "${invalidValueErrorType}")
+#else
+{
+    "version" : "2017-02-28",
+    "operation" : "GetItem",
+    "key" : {
+        "noteId" : { "S" : "${context.arguments.noteId}" },
+    },
+    "consistentRead" : true
+}
+#end

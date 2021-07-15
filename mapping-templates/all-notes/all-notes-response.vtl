@@ -1,0 +1,5 @@
+#if($ctx.result.items.isEmpty())
+     $utils.error("${noDataErrorMessage}", "${noDataErrorType}")
+#else
+    $util.toJson($ctx.result.items)
+#end

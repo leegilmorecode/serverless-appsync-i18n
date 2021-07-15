@@ -1,0 +1,24 @@
+type Note {
+  noteId: ID!
+  title: String
+  content: String
+  type: ID!
+}
+
+type NoteType {
+  noteTypeId: ID!
+  type: String!
+}
+
+type Query {
+  allNotes: [Note]
+  getNote(noteId: ID!): Note
+  getNoteTypes: [NoteType]
+}
+type Mutation {
+  saveNote(noteId: ID!, title: String!, content: String!, type: ID!): Note
+}
+type Schema {
+  query: Query
+  mutation: Mutation
+}
