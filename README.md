@@ -4,7 +4,7 @@ A basic example of [AWS AppSync](https://aws.amazon.com/appsync/) localisation b
 
 > Disclaimer: All translations have been doing using Google Translate so sorry if they are wrong!
 
-This basic code repo is put together for the following blog article [here]().
+This basic code repo is put together for the following blog article [here](https://leejamesgilmore.medium.com/serverless-appsync-localisation-i18n-a72fe0a75876).
 
 You can deploy the examples using:
 
